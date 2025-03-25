@@ -77,7 +77,7 @@ const FeminineChemistryBirthdayCard = () => {
         </div>
         
         <div className={`feminine-message-container ${showMessage ? 'visible' : ''}`}>
-          <h1 className="feminine-title">Happy Birthday, Chemitry Queen!</h1>
+          <h1 className="feminine-title">Happy Birthday, Chemistry Queen!</h1>
           <p className="feminine-subtitle">Like noble gases, some bonds are rare and special.<br/>Like chemistry, you create amazing reactions in everyone around you.</p>
           <p className="feminine-main-message">Wishing you a day as brilliant as diamonds,<br/>As sweet as glucose,<br/>And as perfectly balanced as the best solution!</p>
           <p className="feminine-date-message">March 26th - A day when the most extraordinary element was created</p>

@@ -1,0 +1,277 @@
+.birthday-container-chem-dynamic { /* Dynamic Chemistry Container Styles */
+    background: linear-gradient(to top, #e0f7fa, #f3e5f5); /* Soft, dynamic gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif; /* Modern, clean font */
+    position: relative;
+    color: #263238; /* Darker text color */
+  }
+  
+  .animation-area-chem-dynamic { /* Dynamic Chemistry Animation Area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Reaction Animation - Flask and Bubbles */
+  .reaction-animation {
+    position: absolute;
+    bottom: 10%; /* Positioned at the bottom */
+    left: 20%;
+    transform: translateX(-50%); /* Center horizontally */
+  }
+  
+  .flask-reaction {
+    width: 60px;
+    height: 80px;
+    border-radius: 0 0 30px 30px;
+    border-left: 3px solid #90caf9; /* Light blue flask border */
+    border-right: 3px solid #90caf9;
+    border-bottom: 3px solid #90caf9;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(179, 229, 252, 0.3), rgba(179, 229, 252, 0.1)); /* Flask liquid */
+  }
+  
+  .bubbles {
+    position: absolute;
+    bottom: 10px; /* Bubbles start inside flask */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 50px;
+    overflow: hidden; /* Clip bubbles to flask width */
+  }
+  
+  .bubble {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #b3e5fc; /* Lighter blue bubbles */
+    border-radius: 50%;
+    bottom: 0; /* Start at bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initially hidden */
+    animation: bubble-rise 2s ease-out infinite; /* Bubble rise animation */
+  }
+  
+  .bubble1 { animation-delay: 0.2s; left: 20%; } /* Vary bubble positions and delays */
+  .bubble2 { animation-delay: 0.8s; left: 40%; }
+  .bubble3 { animation-delay: 1.4s; left: 60%; }
+  .bubble4 { animation-delay: 0.5s; left: 80%; }
+  
+  
+  @keyframes bubble-rise { /* Bubble Rise Animation */
+    0% {
+      bottom: 0;
+      opacity: 0;
+      transform: translateX(-50%) scale(0.5);
+    }
+    10%, 90% { opacity: 0.8; } /* Fade in and out during rise */
+    100% {
+      bottom: 100%; /* Rise to top */
+      opacity: 0;
+      transform: translateX(-50%) scale(1); /* Slight scaling */
+    }
+  }
+  
+  
+  /* Titration Animation - Burette and Flask */
+  .titration-animation {
+    position: absolute;
+    top: 15%; /* Positioned near top */
+    right: 15%;
+    display: flex;
+    align-items: flex-end; /* Align burette and flask bottom */
+  }
+  
+  .burette {
+    width: 10px;
+    height: 100px;
+    background-color: #9fa8da; /* Light purple burette */
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    overflow: hidden; /* Clip liquid */
+  }
+  
+  .burette-liquid {
+    position: absolute;
+    bottom: 0; /* Start full */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ce93d8; /* Purple liquid */
+    animation: burette-drain 10s linear forwards; /* Drain animation */
+  }
+  
+  .flask-titration {
+    width: 50px;
+    height: 60px;
+    border-radius: 0 0 25px 25px;
+    border-left: 2px solid #9fa8da; /* Light purple flask border */
+    border-right: 2px solid #9fa8da;
+    border-bottom: 2px solid #9fa8da;
+    margin-left: 10px; /* Spacing from burette */
+    background: rgba(206, 147, 216, 0.1); /* Very faint purple flask liquid */
+  }
+  
+  .liquid-in-flask {
+    width: 100%;
+    height: 20px; /* Initial liquid level */
+    background-color: rgba(206, 147, 216, 0.2); /* Fainter purple liquid */
+    border-radius: 0 0 25px 25px;
+  }
+  
+  
+  @keyframes burette-drain { /* Burette Drain Animation */
+    to {
+      height: 0; /* Drain to empty */
+    }
+  }
+  
+  
+  /* Dynamic Molecule Stream - updated styles and positioning */
+  .molecule-stream {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -50%;
+    animation: molecule-stream-flow-dynamic 25s linear infinite; /* Slower flow */
+  }
+  
+  .stream-dynamic1 { left: 5%; } /* Adjusted stream positions */
+  .stream-dynamic2 { left: 80%; }
+  
+  
+  .delay-dynamic-1 { animation-delay: -10s; } /* Adjusted delay */
+  
+  
+  .molecule {
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5); /* Slightly softer glow */
+  }
+  
+  /* Dynamic Atom Styles - softer, pastel colors */
+  .atom-d1 { width: 13px; height: 13px; background-color: #b2dfdb; } /* Pale teal */
+  .atom-d2 { width: 11px; height: 11px; background-color: #ffab91; } /* Peach (retained) */
+  .atom-d3 { width: 10px; height: 10px; background-color: #f0f4c3; } /* Pale yellow */
+  
+  
+  .molecule-stream .molecule:nth-child(even) { margin-top: 25vh; } /* Adjusted spacing */
+  .molecule-stream .molecule:nth-child(3n) { margin-top: 50vh; }
+  
+  
+  @keyframes molecule-stream-flow-dynamic { /* Dynamic Flow Animation - slower */
+    to {
+      transform: translateY(100vh);
+    }
+  }
+  
+  
+  .text-container-chem-dynamic { /* Dynamic Chemistry Text Container */
+    text-align: center;
+    z-index: 10;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .wish-text-chem-dynamic { /* Dynamic Chemistry Wish Text */
+    font-size: 5em;
+    margin-bottom: 0.1em;
+    opacity: 0;
+    letter-spacing: 1.3px;
+    color: #0d47a1; /* Deep blue title */
+    font-weight: bold;
+  }
+  
+  .name-text-chem-dynamic { /* Dynamic Chemistry Name Text */
+    font-size: 2.5em;
+    opacity: 0;
+    font-style: italic;
+    color: #00796b; /* Teal subtitle */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+  }
+  
+  
+  .animate-text-reveal-chem-dynamic { /* Dynamic Chemistry Text Reveal Animation */
+    animation: text-reveal-chem-dynamic 2.8s cubic-bezier(0.645, 0.045, 0.355, 1) forwards; /* Slightly slower */
+  }
+  
+  @keyframes text-reveal-chem-dynamic { /* Enhanced Text Reveal */
+    0% {
+      opacity: 0;
+      transform: translateY(45px) scale(0.88) rotateZ(-3deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1) rotateZ(0deg);
+    }
+  }
+  
+  
+  .chemistry-art-bg-dynamic { /* Dynamic Chemistry Art Background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.08; /* Even more subtle background */
+    display: flex; /* Use flexbox for tile layout */
+    justify-content: space-around; /* Distribute tiles */
+    align-items: center; /* Center tiles vertically */
+  }
+  
+  .element-tile { /* Element Tiles - background text */
+    font-size: 6vw; /* Responsive font size */
+    font-weight: 900; /* Extra bold */
+    color: #78909c; /* Muted grey-blue */
+    opacity: 0; /* Start hidden */
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.7);
+    animation: tile-fade-in 5s ease-in-out forwards; /* Fade-in animation for tiles */
+  }
+  
+  .chemistry-art-bg-dynamic .element-tile:nth-child(even) { animation-delay: 1s; } /* Stagger tile animation */
+  
+  
+  @keyframes tile-fade-in { /* Tile Fade-in Animation */
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 0.08; transform: scale(1); } /* Fade to subtle opacity */
+  }
+  
+  
+  /* Positioning tiles - CHEMISTRY word */
+  .chemistry-art-bg-dynamic .element-tile.tile1 { /* C */
+    transform: translateX(-35vw) translateY(-10vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile2 { /* H */
+    transform: translateX(-25vw) translateY(15vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile3 { /* E */
+    transform: translateX(-10vw) translateY(-5vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile4 { /* M */
+    transform: translateX(0vw) translateY(20vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile5 { /* I */
+    transform: translateX(15vw) translateY(0vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile6 { /* S */
+    transform: translateX(25vw) translateY(25vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile7 { /* T */
+    transform: translateX(35vw) translateY(-15vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile8 { /* R */
+    transform: translateX(45vw) translateY(10vh);
+  }
+  .chemistry-art-bg-dynamic .element-tile.tile9 { /* Y */
+    transform: translateX(55vw) translateY(30vh);
+  }

@@ -1,0 +1,435 @@
+/* Add this to a new file named ChemistryBirthdayCard.css */
+
+/* Base styles */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, #4a1d96, #1e3a8a);
+}
+
+.from-purple-900 {
+  --tw-gradient-from: #4a1d96;
+}
+
+.to-blue-900 {
+  --tw-gradient-to: #1e3a8a;
+}
+
+.text-white {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Bubble animation */
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-blue-200 {
+  background-color: #bfdbfe;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Card container */
+.z-10 {
+  z-index: 10;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-blue-300 {
+  border-color: #93c5fd;
+}
+
+.transform {
+  transform: translateX(0) translateY(0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.hover\:scale-105:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: scale(1.05);
+}
+
+/* Beaker styles */
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.rounded-b-lg {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.bg-blue-300 {
+  background-color: #93c5fd;
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
+}
+
+.bg-purple-300 {
+  background-color: #c4b5fd;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Formula and text styles */
+.text-center {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.bg-blue-900 {
+  background-color: #1e3a8a;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-yellow-300 {
+  color: #fcd34d;
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translateY(0px);
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.translate-y-10 {
+  --tw-translate-y: 2.5rem;
+  transform: translateY(2.5rem);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-pink-300 {
+  color: #f9a8d4;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-blue-200 {
+  color: #bfdbfe;
+}
+
+/* Periodic table element */
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-yellow-500 {
+  border-color: #f59e0b;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/* Floating molecules */
+.top-10 {
+  top: 2.5rem;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.text-green-300 {
+  color: #86efac;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Make sure the component takes full height */
+body, html, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

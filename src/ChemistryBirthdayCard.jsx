@@ -71,7 +71,7 @@ const FeminineChemistryBirthdayCard = () => {
         
         <div className={`feminine-formula-container ${formulaVisible ? 'visible' : ''}`}>
           <div className="feminine-formula">
-            <span className="feminine-formula-text">C<sub>60</sub> + <sup>26</sup>Ma + Au + C₆H₁₂O₆ → </span>
+            <span className="feminine-formula-text">C<sub>60</sub> + <sup>26</sup>Ma + Au + C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> → </span>
             <span className="feminine-formula-result">Monika + 💖</span>
           </div>
         </div>

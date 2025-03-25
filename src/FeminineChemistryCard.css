@@ -1,5 +1,18 @@
 /* FeminineChemistryCard.css */
 /* New Chemistry Icons Styles */
+
+:root {
+  --primary-color: #6A0DAD;  /* Deep Purple */
+  --accent-color: #FF1493;   /* Hot Pink */
+  --secondary-color: #1C1C1C; /* Midnight Black */
+  --highlight-color: #FFD700; /* Metallic Gold */
+  --background-color: #2C2C2C; /* Dark Grey */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--highlight-color);
+}
 .chemistry-icons {
   position: absolute;
   width: 100%;
@@ -187,11 +200,17 @@
   justify-content: center;
   font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #4A4A4A;
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+  scrollbar-width: none; /* Firefox */
+  background-color: var(--primary-color);
+  border: 2px solid var(--highlight-color);
+
 }
 
 /* Custom scrollbar styles */
 .feminine-card-container::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
+  width: 0px;
+  height: 0px;
 }
 
 .feminine-card-container::-webkit-scrollbar-track {
@@ -439,6 +458,7 @@
   transform: translateY(0);
 }
 
+
 .feminine-title {
   font-size: 3rem;
   font-weight: 800;
@@ -446,9 +466,11 @@
   background: linear-gradient(to right, #ff80ab, #b388ff, #82b1ff);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  /* color: transparent; */
   text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
   letter-spacing: 1px;
+  color: var(--accent-color);
+
 }
 
 .feminine-subtitle {
